@@ -6,14 +6,14 @@
 <meta name="theme-color" content="#121110">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tt04-droid.github.io/">
-<meta property="og:title" content="Thierry “TT” Edouard — UGC creator & creative director">
-<meta property="og:description" content="Real life, shot like a campaign. UGC, short-form and brand films for lifestyle, fashion, fitness and sports brands. EN / FR.">
+<meta property="og:title" content="Thierry “TT” Edouard — Creative director, filmmaker & founder of KITZ">
+<meta property="og:description" content="Culture, shot like a campaign. Brand films, campaigns, fashion and creative direction from San Francisco. EN / FR.">
 <meta property="og:image" content="https://tt04-droid.github.io/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23FF5A1F'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23121110'%3ETT%3C/text%3E%3C/svg%3E">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
 <title>Thierry “TT” Edouard</title>
-<meta name="description" content="UGC creator and creative director in San Francisco. Real life, shot like a campaign.">
+<meta name="description" content="Haitian creative director, filmmaker and founder of KITZ in San Francisco. Brand films, campaigns, fashion. Culture, shot like a campaign.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,400..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -264,6 +264,15 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
 @media (max-width:820px){.lb-in{grid-template-columns:1fr;gap:14px;align-content:center;justify-items:center}.lb-in video{height:auto;width:min(100%,calc(72vh*9/16))}.lb-meta{width:min(100%,420px)}.lb-meta h3{font-size:34px}}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.looks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.4vw,18px)}
+.look{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--ink);aspect-ratio:3/4}
+.look:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.look img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.look:hover img{transform:scale(1.04)}
+.look figcaption{position:absolute;left:12px;bottom:12px;display:flex;gap:8px;align-items:center;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(18,17,16,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:7px 10px;border-radius:999px}
+.look figcaption b{color:var(--orange)}
+@media (max-width:760px){.looks{grid-template-columns:repeat(2,minmax(0,1fr))}.look:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:3/4}}
 </style>
 </head>
 <body>
@@ -274,8 +283,9 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Thierry Edouard"><b>TT</b><span>Thierry Edouard</span></a>
     <nav aria-label="Sections"><ul>
-      <li><a href="#highlights" data-i="nav1"></a></li>
-      <li><a href="#fixtures" data-i="nav2"></a></li>
+      <li><a href="#fixtures" data-i="nav1"></a></li>
+      <li><a href="#style" data-i="nav2"></a></li>
+      <li><a href="#highlights" data-i="nav5"></a></li>
       <li><a href="#fees" data-i="nav3"></a></li>
       <li><a href="#profile" data-i="nav4"></a></li>
     </ul></nav>
@@ -301,28 +311,54 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
           <p class="lede" data-ih="lede"></p>
           <div class="ctas">
             <a class="btn" href="#offer" data-i="cta2"></a>
-            <a class="btn line" href="#highlights" data-i="cta3"></a>
+            <a class="btn line" href="#fixtures" data-i="cta3"></a>
           </div>
         </div>
       </div>
       <div class="stats-bar">
-        <div><strong>42.2K</strong><span data-i="s1"></span></div>
-        <div><strong>111K</strong><span data-i="s2"></span></div>
         <div><strong>30+</strong><span data-i="s3"></span></div>
-        <div><strong>5</strong><span data-i="s4"></span></div>
+        <div><strong>111K</strong><span data-i="s2"></span></div>
+        <div><strong>42.2K</strong><span data-i="s1"></span></div>
+        <div><strong>3</strong><span data-i="s4"></span></div>
       </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="fixtures" class="sec">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="tag mono"><span>01</span><span data-i="f_tag"></span></div><h2 class="cond" data-ih="f_h2"></h2></div>
+        <p data-i="f_p"></p>
+      </div>
+      <div class="fx-head mono" aria-hidden="true"><span data-i="th1"></span><span data-i="th2"></span><span data-i="th3"></span><span data-i="th4"></span><span data-i="th5"></span><span></span></div>
+      <ol class="fixtures" id="fixtures-list"></ol>
+    </div>
+    <div class="peek" id="peek" aria-hidden="true"><video muted loop playsinline preload="none"></video></div>
+  </section>
+
+  <section id="style" class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="tag mono"><span>02</span><span data-i="st_tag"></span></div><h2 class="cond" data-ih="st_h2"></h2></div>
+        <p data-i="st_p"></p>
+      </div>
+      <div class="looks" id="looks"></div>
     </div>
   </section>
 
   <section id="highlights" class="dark sec">
     <div class="wrap">
       <div class="head">
-        <div><div class="tag mono"><span>01</span><span data-i="h_tag"></span></div><h2 class="cond" data-ih="h_h2"></h2></div>
+        <div><div class="tag mono"><span>03</span><span data-i="h_tag"></span></div><h2 class="cond" data-ih="h_h2"></h2></div>
         <p data-i="h_p"></p>
       </div>
       <div class="broadcast">
         <div class="screen">
-          <video id="bc-v" muted loop playsinline autoplay preload="auto" poster="img/ugc-kitz-gym.jpg" src="media/loop-ugc-kitz-gym.mp4"></video>
+          <video id="bc-v" muted loop playsinline autoplay preload="none" poster="img/ugc-kitz-gym.jpg" src="media/loop-ugc-kitz-gym.mp4"></video>
           <span class="live-dot"><i></i><span data-i="replay"></span></span>
           <button class="snd" type="button" id="bc-snd" data-i="sound"></button>
           <div class="l3"><div class="bar"><span id="bc-no">01</span><span id="bc-k"></span></div><h3 id="bc-t"></h3></div>
@@ -335,29 +371,7 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
     </div>
   </section>
 
-  <section id="fixtures" class="sec">
-    <div class="wrap">
-      <div class="head">
-        <div><div class="tag mono"><span>02</span><span data-i="f_tag"></span></div><h2 class="cond" data-ih="f_h2"></h2></div>
-        <p data-i="f_p"></p>
-      </div>
-      <div class="fx-head mono" aria-hidden="true"><span data-i="th1"></span><span data-i="th2"></span><span data-i="th3"></span><span data-i="th4"></span><span data-i="th5"></span><span></span></div>
-      <ol class="fixtures" id="fixtures-list"></ol>
-    </div>
-    <div class="peek" id="peek" aria-hidden="true"><video muted loop playsinline preload="none"></video></div>
-  </section>
-
-  <section id="fees" class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="head">
-        <div><div class="tag mono"><span>03</span><span data-i="p_tag"></span></div><h2 class="cond" data-ih="p_h2"></h2></div>
-        <p data-i="p_p"></p>
-      </div>
-      <div class="fees" id="fees-list"></div>
-    </div>
-  </section>
-
-  <section id="profile" class="sec" style="padding-top:0">
+  <section id="profile" class="sec">
     <div class="wrap profile">
       <figure>
         <img src="img/about-tt-golden-gate.jpg" alt="TT in an orange cap looking out at the Golden Gate Bridge" width="1440" height="1794" loading="lazy">
@@ -370,6 +384,16 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
         <p class="muted" style="font-size:17px;color:var(--muted)" data-i="a_p2"></p>
         <dl class="sheet" id="sheet"></dl>
       </div>
+    </div>
+  </section>
+
+  <section id="fees" class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><div class="tag mono"><span>05</span><span data-i="p_tag"></span></div><h2 class="cond" data-ih="p_h2"></h2></div>
+        <p data-i="p_p"></p>
+      </div>
+      <div class="fees" id="fees-list"></div>
     </div>
   </section>
 
@@ -398,15 +422,15 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
           <fieldset>
             <legend class="legend" data-i="l_need" style="margin-bottom:8px"></legend>
             <div class="chips">
-              <input type="radio" name="service" id="s1" value="ugc" checked><label for="s1" data-i="sv_ugc"></label>
+              <input type="radio" name="service" id="s4" value="direction" checked><label for="s4" data-i="sv_dir"></label>
               <input type="radio" name="service" id="s2" value="dropkit"><label for="s2">Drop Kit</label>
               <input type="radio" name="service" id="s3" value="engine"><label for="s3" data-i="sv_engine"></label>
-              <input type="radio" name="service" id="s4" value="direction"><label for="s4" data-i="sv_dir"></label>
               <input type="radio" name="service" id="s5" value="lookbook"><label for="s5">Lookbook Lift</label>
+              <input type="radio" name="service" id="s1" value="ugc"><label for="s1" data-i="sv_ugc"></label>
             </div>
           </fieldset>
           <div class="g2">
-            <label for="f-budget"><span data-i="l_budget"></span><select id="f-budget" name="budget"><option>&lt; $250</option><option selected>$250 – $500</option><option>$500 – $1,000</option><option>$1,000 – $3,000</option><option>$3,000+</option></select></label>
+            <label for="f-budget"><span data-i="l_budget"></span><select id="f-budget" name="budget"><option>&lt; $500</option><option>$500 – $1,000</option><option selected>$1,000 – $3,000</option><option>$3,000 – $10,000</option><option>$10,000+</option></select></label>
             <label for="f-date"><span><span data-i="l_date"></span> <span class="opt" data-i="opt"></span></span><input id="f-date" name="needed_by"></label>
           </div>
           <label for="f-msg"><span data-i="l_msg"></span><textarea id="f-msg" name="message" required></textarea></label>
@@ -448,64 +472,64 @@ const W3F_KEY = '6fc6c3ba-83b7-4ef5-b6c6-9f3aca4ee774';
 const EMAIL = 'thierryedouard04@gmail.com';
 const T = {
  en:{
-  ticker:['● Booking Nov–Dec','UGC · Creative direction · Film','Lifestyle · Fashion · Fitness · Sports','San Francisco → anywhere','Kreyòl · Français · English'],
-  role:'UGC creator & creative director · San Francisco',status:'Booking Nov–Dec',
-  nav1:'UGC',nav2:'Projects',nav3:'Rates',nav4:'About',cta:'Work with me',
-  prog1:'Matchday programme',prog2:'Season 2026',
-  h1:'Real life,<br>shot like a <span class="voice">campaign.</span>',
-  lede:'I’m <b>TT</b>, a Haitian UGC creator and creative director in San Francisco. I make product videos, short-form and brand films for <b>lifestyle, fashion, fitness and sports</b> brands. On camera, behind it, or both.',
+  ticker:['● Booking Nov–Dec','Creative direction · Film · Fashion','Founder of KITZ','Campaigns · Brand films · Lookbooks','Haiti → San Francisco → anywhere','Kreyòl · Français · English'],
+  role:'Creative director · Filmmaker · Stylist — San Francisco',status:'Booking Nov–Dec',
+  nav1:'Work',nav2:'Style',nav5:'On camera',nav3:'Services',nav4:'About',cta:'Work with me',
+  h1:'Culture,<br>shot like a <span class="voice">campaign.</span>',
+  lede:'I’m <b>TT</b>: Haitian creative director, filmmaker and founder of <b>KITZ</b>, based in San Francisco. I direct, shoot, style and edit <b>brand films, campaigns, fashion and stories about culture</b>, from the first idea to the final cut. Behind the camera, in front of it, or both.',
   cta2:'Start a project →',cta3:'Watch the work',
-  stats:[['95','CAM'],['93','DIR'],['96','EDT'],['94','STY'],['92','SPD'],['99','CUL']],
-  s1:'likes on my TikTok',s2:'views on my top video',s3:'films directed & edited',s4:'categories on camera',
-  h_tag:'UGC portfolio',h_h2:'Now <span class="voice">playing.</span>',h_p:'Six products, filmed in real places with real routines. Pick a video and turn the sound on.',
+  s1:'likes on my TikTok',s2:'views on a single video',s3:'films directed & edited',s4:'languages I create in',
+  h_tag:'On camera',h_h2:'In front of the <span class="voice">lens, too.</span>',h_p:'When a brand needs a face, I step in. Six product videos (UGC), filmed in real places with real routines. Pick one and turn the sound on.',
   replay:'Now playing',sound:'🔊 Sound on',sound_off:'🔇 Sound off',h_small:'Hook variations, voiceover and raw footage available on request.',
-  f_tag:'Creative direction',f_h2:'Beyond <span class="voice">UGC.</span>',f_p:'When a brand needs more than one video, I direct the whole look: concept, casting, shoot and edit. Most of it for KITZ, the streetwear brand I founded.',
+  f_tag:'Selected work',f_h2:'Directed, shot <span class="voice">and cut.</span>',f_p:'Brand films, campaigns, fashion and culture. I own the whole look: concept, casting, styling, shoot and edit. Much of it for KITZ, the streetwear brand I founded. Tap a film to watch.',
+  st_tag:'Style',st_h2:'Fits, frames <span class="voice">and feeling.</span>',st_p:'Styling is where every idea starts for me. My own looks, shot around the Bay.',
+  looks:['Rooftop · Fog','Rooftop · After dark','Elevator · Self-portrait','Palace of Fine Arts','Garage · All black','Corner store · Night'],
   th1:'No.',th2:'Project',th3:'Client',th4:'My role',th5:'Length',
-  p_tag:'Rates',p_h2:'Simple <span class="voice">pricing.</span>',p_p:'Clear packages for small brands. Every file comes sized for Reels, TikTok, Stories and your site. Tap a line to start a brief.',
+  p_tag:'Services',p_h2:'Ways to work <span class="voice">together.</span>',p_p:'From one product drop to a full campaign. Every file comes sized for Reels, TikTok, Stories and your site. Tap a line to start a brief.',
   quote:'Quote',days5:'5 days',days7:'7 days',monthly:'Monthly',per:'Per brief',byproj:'By project',mo:'/mo',best:'Best start',
   a_tag:'About',a_h2:'Born in Haiti. <span class="voice">Built in the Bay.</span>',
   a_p1:'I landed in San Francisco with two bags in October 2024. Since then I’ve built a streetwear brand, a Sunday league crew and a camera roll of more than 3,000 moments, and I’ve learned what makes people stop scrolling.',
-  a_p2:'Brands work with me because I’m on both sides of the camera. I can be the face of your product, or direct and edit the whole thing so it looks like it came from a bigger team.',
-  sheet:[['From','Haiti'],['Based in','San Francisco'],['Founder of','KITZ'],['Role','UGC creator · Creative director'],['Languages','Kreyòl · Français · English'],['In SF since','October 2024']],
+  a_p2:'I’m a creative first. Fashion, film, football and where I come from all end up in the work. Brands bring me in for that eye: I can direct and edit the whole thing so it looks like it came from a bigger team, or step in front of the camera myself.',
+  sheet:[['From','Haiti'],['Based in','San Francisco'],['Founder of','KITZ'],['Role','Creative director · Filmmaker · Stylist'],['Languages','Kreyòl · Français · English'],['In SF since','October 2024']],
   o_tag:'Contact',o_h2:'Let’s make something <span class="voice">people watch.</span>',o_p:'Tell me about your brand and what you need. I reply within a day, in English or French.',copy:'Copy',
-  l_name:'Your name',l_email:'Email',l_brand:'Brand',l_brand2:'and a link',l_need:'What do you need?',sv_ugc:'UGC videos',sv_engine:'Monthly content',sv_dir:'Direction / shoot',l_budget:'Budget',l_date:'Needed by',opt:'optional',l_msg:'Project',
+  l_name:'Your name',l_email:'Email',l_brand:'Brand',l_brand2:'and a link',l_need:'What do you need?',sv_ugc:'Creator videos (UGC)',sv_engine:'Monthly content',sv_dir:'Creative direction',l_budget:'Budget',l_date:'Needed by',opt:'optional',l_msg:'Project',
   ph_name:'Jordan Lee',ph_email:'you@brand.com',ph_brand:'Your brand · instagram.com/yourbrand',ph_date:'e.g. Nov 20 launch',ph_msg:'What’s the product, what should the content do, and where will it run?',
   send:'Send brief →',sending:'Sending…',note:'Goes straight to thierryedouard04@gmail.com',
   e_missing:'Please fill in your name, email, brand and project.',e_email:'That email address doesn’t look right.',
   sent_chip:'Sent',sent_h:'Thanks, got it.',sent_p:'Your brief is in my inbox. I’ll reply from thierryedouard04@gmail.com within a day.',
   fb_chip:'Almost there',fb_h:'Send it by email.',fb_p:'The form couldn’t connect from this page. Your message is ready below: copy it and email it to thierryedouard04@gmail.com.',fb_copy:'Copy message',fb_mail:'Open Gmail',
-  foot:'UGC · Creative direction · Film',
-  svc:{ugc:'UGC videos',dropkit:'Drop Kit ($450)',engine:'Content Engine ($900/mo)',direction:'Creative direction / shoot',lookbook:'Lookbook Lift ($250)'}
+  foot:'Creative direction · Film · Fashion',
+  svc:{ugc:'Creator videos (UGC)',dropkit:'Drop Kit ($450)',engine:'Content Engine ($900/mo)',direction:'Creative direction / shoot',lookbook:'Lookbook Lift ($250)'}
  },
  fr:{
-  ticker:['● Disponible nov.–déc.','UGC · Direction créative · Film','Lifestyle · Mode · Fitness · Sport','San Francisco → partout','Kreyòl · Français · English'],
-  role:'Créateur UGC & directeur créatif · San Francisco',status:'Disponible nov.–déc.',
-  nav1:'UGC',nav2:'Projets',nav3:'Tarifs',nav4:'À propos',cta:'Travaillons ensemble',
-  prog1:'Programme de match',prog2:'Saison 2026',
-  h1:'La vraie vie,<br>filmée comme une <span class="voice">campagne.</span>',
-  lede:'Moi c’est <b>TT</b>, créateur UGC et directeur créatif haïtien basé à San Francisco. Je réalise des vidéos produit, du contenu court et des films de marque pour les marques <b>lifestyle, mode, fitness et sport</b>. Devant la caméra, derrière, ou les deux.',
+  ticker:['● Disponible nov.–déc.','Direction créative · Film · Mode','Fondateur de KITZ','Campagnes · Films de marque · Lookbooks','Haïti → San Francisco → partout','Kreyòl · Français · English'],
+  role:'Directeur créatif · Réalisateur · Styliste — San Francisco',status:'Disponible nov.–déc.',
+  nav1:'Projets',nav2:'Style',nav5:'Devant la caméra',nav3:'Services',nav4:'À propos',cta:'Travaillons ensemble',
+  h1:'La culture,<br>filmée comme une <span class="voice">campagne.</span>',
+  lede:'Moi c’est <b>TT</b> : directeur créatif, réalisateur et fondateur de <b>KITZ</b>, haïtien, basé à San Francisco. Je dirige, filme, stylise et monte <b>des films de marque, des campagnes, de la mode et des histoires de culture</b>, de la première idée au montage final. Derrière la caméra, devant, ou les deux.',
   cta2:'Démarrer un projet →',cta3:'Voir le travail',
-  stats:[['95','CAM'],['93','DIR'],['96','MON'],['94','STY'],['92','VIT'],['99','CUL']],
-  s1:'likes sur mon TikTok',s2:'vues sur ma meilleure vidéo',s3:'films réalisés et montés',s4:'catégories devant la caméra',
-  h_tag:'Portfolio UGC',h_h2:'En <span class="voice">lecture.</span>',h_p:'Six produits, filmés dans de vrais lieux, avec de vraies routines. Choisissez une vidéo et activez le son.',
+  s1:'likes sur mon TikTok',s2:'vues sur une seule vidéo',s3:'films réalisés et montés',s4:'langues de création',
+  h_tag:'Devant la caméra',h_h2:'Devant l’objectif <span class="voice">aussi.</span>',h_p:'Quand une marque a besoin d’un visage, je passe devant. Six vidéos produit (UGC), filmées dans de vrais lieux, avec de vraies routines. Choisissez-en une et activez le son.',
   replay:'En lecture',sound:'🔊 Activer le son',sound_off:'🔇 Couper le son',h_small:'Variantes d’accroche, voix off et rushs disponibles sur demande.',
-  f_tag:'Direction créative',f_h2:'Au-delà de <span class="voice">l’UGC.</span>',f_p:'Quand une marque a besoin de plus qu’une vidéo, je dirige tout le look : concept, casting, tournage et montage. Surtout pour KITZ, la marque streetwear que j’ai fondée.',
+  f_tag:'Projets choisis',f_h2:'Réalisé, filmé <span class="voice">et monté.</span>',f_p:'Films de marque, campagnes, mode et culture. Je porte tout le look : concept, casting, stylisme, tournage et montage. Une grande partie pour KITZ, la marque streetwear que j’ai fondée. Touchez un film pour le voir.',
+  st_tag:'Style',st_h2:'Des looks, des images, <span class="voice">une vibe.</span>',st_p:'Le style, c’est là que chaque idée commence pour moi. Mes propres looks, photographiés dans la Bay.',
+  looks:['Rooftop · Brouillard','Rooftop · De nuit','Ascenseur · Autoportrait','Palace of Fine Arts','Parking · Tout en noir','Épicerie · De nuit'],
   th1:'N°',th2:'Projet',th3:'Client',th4:'Mon rôle',th5:'Durée',
-  p_tag:'Tarifs',p_h2:'Des tarifs <span class="voice">clairs.</span>',p_p:'Des formules claires pour les petites marques. Chaque fichier est livré aux formats Reels, TikTok, Stories et site web. Cliquez sur une ligne pour envoyer un brief.',
+  p_tag:'Services',p_h2:'Travailler <span class="voice">ensemble.</span>',p_p:'D’un simple drop produit à une campagne complète. Chaque fichier est livré aux formats Reels, TikTok, Stories et site web. Cliquez sur une ligne pour envoyer un brief.',
   quote:'Sur devis',days5:'5 jours',days7:'7 jours',monthly:'Mensuel',per:'Selon le brief',byproj:'Par projet',mo:'/mois',best:'Idéal pour commencer',
   a_tag:'À propos',a_h2:'Né en Haïti. <span class="voice">Construit dans la Bay.</span>',
   a_p1:'Je suis arrivé à San Francisco avec deux sacs en octobre 2024. Depuis, j’ai lancé une marque streetwear, une équipe de foot du dimanche et une pellicule de plus de 3 000 moments, et j’ai appris ce qui fait qu’on arrête de scroller.',
-  a_p2:'Les marques travaillent avec moi parce que je suis des deux côtés de la caméra. Je peux être le visage de votre produit, ou tout diriger et monter pour que le rendu ait l’air de venir d’une équipe bien plus grande.',
-  sheet:[['Origine','Haïti'],['Basé à','San Francisco'],['Fondateur de','KITZ'],['Métier','Créateur UGC · Directeur créatif'],['Langues','Kreyòl · Français · English'],['À SF depuis','octobre 2024']],
+  a_p2:'Je suis un créatif avant tout. La mode, le cinéma, le foot et mes origines se retrouvent dans tout ce que je fais. Les marques viennent pour ce regard : je peux tout diriger et monter pour que le rendu ait l’air de venir d’une équipe bien plus grande, ou passer moi-même devant la caméra.',
+  sheet:[['Origine','Haïti'],['Basé à','San Francisco'],['Fondateur de','KITZ'],['Métier','Directeur créatif · Réalisateur · Styliste'],['Langues','Kreyòl · Français · English'],['À SF depuis','octobre 2024']],
   o_tag:'Contact',o_h2:'Du contenu qu’on <span class="voice">regarde vraiment.</span>',o_p:'Parlez-moi de votre marque et de vos besoins. Je réponds sous 24 h, en français ou en anglais.',copy:'Copier',
-  l_name:'Votre nom',l_email:'E-mail',l_brand:'Marque',l_brand2:'et un lien',l_need:'Votre besoin',sv_ugc:'Vidéos UGC',sv_engine:'Contenu mensuel',sv_dir:'Direction / tournage',l_budget:'Budget',l_date:'Pour quand',opt:'facultatif',l_msg:'Projet',
+  l_name:'Votre nom',l_email:'E-mail',l_brand:'Marque',l_brand2:'et un lien',l_need:'Votre besoin',sv_ugc:'Vidéos créateur (UGC)',sv_engine:'Contenu mensuel',sv_dir:'Direction créative',l_budget:'Budget',l_date:'Pour quand',opt:'facultatif',l_msg:'Projet',
   ph_name:'Camille Martin',ph_email:'vous@marque.com',ph_brand:'Votre marque · instagram.com/votremarque',ph_date:'ex. lancement le 20 nov.',ph_msg:'Quel est le produit, quel est l’objectif du contenu, et où sera-t-il diffusé ?',
   send:'Envoyer le brief →',sending:'Envoi…',note:'Arrive directement sur thierryedouard04@gmail.com',
   e_missing:'Merci de remplir votre nom, votre e-mail, votre marque et le projet.',e_email:'Cette adresse e-mail ne semble pas valide.',
   sent_chip:'Envoyé',sent_h:'Merci, bien reçu.',sent_p:'Votre brief est dans ma boîte mail. Je réponds depuis thierryedouard04@gmail.com sous 24 h.',
   fb_chip:'Presque fini',fb_h:'Envoyez-le par e-mail.',fb_p:'Le formulaire n’a pas pu se connecter depuis cette page. Votre message est prêt ci-dessous : copiez-le et envoyez-le à thierryedouard04@gmail.com.',fb_copy:'Copier le message',fb_mail:'Ouvrir Gmail',
-  foot:'UGC · Direction créative · Film',
-  svc:{ugc:'Vidéos UGC',dropkit:'Drop Kit (450 $)',engine:'Content Engine (900 $/mois)',direction:'Direction créative / tournage',lookbook:'Lookbook Lift (250 $)'}
+  foot:'Direction créative · Film · Mode',
+  svc:{ugc:'Vidéos créateur (UGC)',dropkit:'Drop Kit (450 $)',engine:'Content Engine (900 $/mois)',direction:'Direction créative / tournage',lookbook:'Lookbook Lift (250 $)'}
  }
 };
 const UGC = [
@@ -527,11 +551,11 @@ const WORK = [
   {id:'sunday-league',len:'0:44',club:'TT',en:['Sunday League','Sport · Broadcast style','Edit, graphics','Lose in the semis, come back for the trophy. Cut with live-TV graphics.'],fr:['Sunday League','Sport · Style télé','Montage, graphismes','Perdre en demie, revenir pour le trophée. Monté avec des graphismes de direct télé.']}
 ];
 const FEES = [
-  {svc:'ugc',en:['UGC video','Product demo, routine or review. Hook variations on request.'],fr:['Vidéo UGC','Démo produit, routine ou avis. Variantes d’accroche sur demande.'],t:'per',p:null},
+  {svc:'direction',en:['Creative direction','Campaigns, brand films, lookbooks and events: concept, casting, styling, shoot and edit.'],fr:['Direction créative','Campagnes, films de marque, lookbooks et événements : concept, casting, stylisme, tournage et montage.'],t:'byproj',p:null},
   {svc:'dropkit',star:true,en:['Drop Kit','10 images + 3 videos (teaser, launch, recap), captions and a posting plan.'],fr:['Drop Kit','10 images + 3 vidéos (teaser, lancement, récap), légendes et plan de publication.'],t:'days7',p:'$450'},
   {svc:'engine',en:['Content Engine','15 images + 6 videos a month, a monthly plan and weekly delivery.'],fr:['Content Engine','15 images + 6 vidéos par mois, un plan mensuel et une livraison chaque semaine.'],t:'monthly',p:'$900',mo:true},
   {svc:'lookbook',en:['Lookbook Lift','10 edited images from your shoot or your existing photos.'],fr:['Lookbook Lift','10 images retouchées, à partir de votre shooting ou de vos photos existantes.'],t:'days5',p:'$250'},
-  {svc:'direction',en:['Creative direction','Campaigns, brand films, shoots on location and events.'],fr:['Direction créative','Campagnes, films de marque, tournages en extérieur et événements.'],t:'byproj',p:null}
+  {svc:'ugc',en:['Creator videos (UGC)','Me on camera with your product: demo, routine or review. Hook variations on request.'],fr:['Vidéos créateur (UGC)','Moi à l’écran avec votre produit : démo, routine ou avis. Variantes d’accroche sur demande.'],t:'per',p:null}
 ];
 
 let lang = 'en', current = 0;
@@ -551,9 +575,10 @@ function renderStatic(){
   $('#form').dataset.sheet = lang === 'fr' ? 'BRIEF PROJET' : 'PROJECT BRIEF';
   document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'));
 }
-const STRIP=[['after-dark','work'],['ugc-kitz-gym','ugc'],['wherever-we-go','work'],['ugc-wyze','ugc'],['sunday-league','work']];
+const STRIP=[['after-dark','work'],[1,'look'],['wherever-we-go','work'],[3,'look'],['sunday-league','work']];
 function renderLists(){
-  $('#strip').innerHTML = STRIP.map(([id,kind]) => { const it = (kind==='ugc'?UGC:WORK).find(x=>x.id===id); const cat = (kind==='ugc'? it[lang][1] : it[lang][1]).split(' · ')[0]; return `<button type="button" class="tile" data-${kind==='ugc'?'ugcopen':'open'}="${id}" aria-label="${it[lang][0]}"><span class="v"><video src="media/loop-${id}.mp4" poster="img/${id}.jpg" muted loop playsinline autoplay preload="auto"></video></span><span class="cap"><b>${kind==='ugc'?'UGC':(lang==='fr'?'Direction':'Direction')}</b><span>${cat}</span></span></button>`; }).join('');
+  $('#strip').innerHTML = STRIP.map(([id,kind]) => { if (kind==='look') return `<a class="tile" href="#style" aria-label="${L().looks[id-1]}"><span class="v"><img src="img/style/look-${id}-s.jpg" alt="" loading="eager"></span><span class="cap"><b>${lang==='fr'?'Style':'Style'}</b><span>${L().looks[id-1].split(' · ')[0]}</span></span></a>`; const it = WORK.find(x=>x.id===id); return `<button type="button" class="tile" data-open="${id}" aria-label="${it[lang][0]}"><span class="v"><video src="media/loop-${id}.mp4" poster="img/${id}.jpg" muted loop playsinline autoplay preload="auto"></video></span><span class="cap"><b>${lang==='fr'?'Film':'Film'}</b><span>${it[lang][1].split(' · ')[0]}</span></span></button>`; }).join('');
+  $('#looks').innerHTML = L().looks.map((t,i) => `<figure class="look"><img src="img/style/look-${i+1}.jpg" alt="TT, ${t}" loading="lazy" width="900" height="1200"><figcaption><b>${String(i+1).padStart(2,'0')}</b>${t}</figcaption></figure>`).join('');
   if (reduce) document.querySelectorAll('#strip video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
   $('#replays').innerHTML = UGC.map((u,i) => { const [t,k] = u[lang]; return `<li><button type="button" class="rp" data-rp="${i}" aria-current="${i===current}"><span class="no">${String(i+1).padStart(2,'0')}</span><span class="th"><img src="img/${u.id}.jpg" alt="" loading="lazy"></span><span><h4>${t}</h4><span class="k">${k}</span></span><span class="d">${u.len}</span></button></li>`; }).join('');
   $('#fixtures-list').innerHTML = WORK.map((w,i) => { const [t,cat,role] = w[lang]; return `<li><button type="button" class="fx" data-open="${w.id}"><span class="no">${String(i+1).padStart(2,'0')}</span><h3>${t}</h3><span class="fclub"><b>${w.club}</b><span>${cat}</span></span><span class="role">${role}</span><span class="ft">${w.len}</span><span class="th"><img src="img/${w.id}.jpg" alt="" loading="lazy"></span></button></li>`; }).join('');
