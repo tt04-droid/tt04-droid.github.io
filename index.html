@@ -443,7 +443,8 @@ dialog.lb::backdrop{background:rgba(12,11,10,.95)}
 </dialog>
 
 <script>
-const ENDPOINT = 'https://formsubmit.co/ajax/thierryedouard04@gmail.com';
+const ENDPOINT = 'https://api.web3forms.com/submit';
+const W3F_KEY = '6fc6c3ba-83b7-4ef5-b6c6-9f3aca4ee774';
 const EMAIL = 'thierryedouard04@gmail.com';
 const T = {
  en:{
@@ -638,7 +639,7 @@ form.addEventListener('submit', async e => {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) { err.textContent = L().e_email; err.hidden = false; $('#f-email').focus(); return; }
   send.disabled = true; send.textContent = L().sending;
   const service = T.en.svc[d.service] || d.service;
-  const payload = { _subject:`New brief: ${d.brand} — ${service}`, _template:'table', _captcha:'false', _replyto:d.email,
+  const payload = { access_key:W3F_KEY, subject:`New brief: ${d.brand} — ${service}`, from_name:'TT Studio site', replyto:d.email,
     name:d.name, email:d.email, brand:d.brand, service, budget:d.budget, needed_by:d.needed_by || '—', language: lang === 'fr' ? 'French' : 'English', message:d.message };
   try {
     const c = new AbortController(); const tm = setTimeout(() => c.abort(), 12000);
@@ -649,7 +650,7 @@ form.addEventListener('submit', async e => {
   } catch(x) {
     const body = `Name: ${d.name}\nEmail: ${d.email}\nBrand: ${d.brand}\nService: ${service}\nBudget: ${d.budget}\nNeeded by: ${d.needed_by||'—'}\n\n${d.message}`;
     $('#fb-text').value = body;
-    $('#fb-mail').href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(EMAIL) + '&su=' + encodeURIComponent(payload._subject) + '&body=' + encodeURIComponent(body);
+    $('#fb-mail').href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(EMAIL) + '&su=' + encodeURIComponent(payload.subject) + '&body=' + encodeURIComponent(body);
     $('#form-body').hidden = true; $('#fallback').hidden = false;
   } finally { send.disabled = false; send.textContent = L().send; }
 });
